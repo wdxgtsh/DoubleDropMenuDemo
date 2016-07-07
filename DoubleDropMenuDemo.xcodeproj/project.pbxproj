@@ -25,6 +25,9 @@
 		443507D51D2E35D900CE61FD /* ZLDropMenuSubCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 443507D41D2E35D900CE61FD /* ZLDropMenuSubCell.m */; };
 		443507D81D2E370500CE61FD /* ZLDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 443507D71D2E370500CE61FD /* ZLDropDownMenu.m */; };
 		443507DB1D2E4CAA00CE61FD /* ZLCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 443507DA1D2E4CAA00CE61FD /* ZLCategoryViewController.m */; };
+		443507DF1D2EA54D00CE61FD /* ZLPeopleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 443507DE1D2EA54D00CE61FD /* ZLPeopleViewController.m */; };
+		443507E21D2EA56000CE61FD /* ZLBoyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 443507E11D2EA56000CE61FD /* ZLBoyViewController.m */; };
+		443507E51D2EA57800CE61FD /* ZLGirlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 443507E41D2EA57800CE61FD /* ZLGirlViewController.m */; };
 		A754CAFC59E765ABABBEBE4F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD17E65902CE79DAE9942F0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +62,12 @@
 		443507D71D2E370500CE61FD /* ZLDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLDropDownMenu.m; sourceTree = "<group>"; };
 		443507D91D2E4CAA00CE61FD /* ZLCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLCategoryViewController.h; sourceTree = "<group>"; };
 		443507DA1D2E4CAA00CE61FD /* ZLCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLCategoryViewController.m; sourceTree = "<group>"; };
+		443507DD1D2EA54D00CE61FD /* ZLPeopleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPeopleViewController.h; sourceTree = "<group>"; };
+		443507DE1D2EA54D00CE61FD /* ZLPeopleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPeopleViewController.m; sourceTree = "<group>"; };
+		443507E01D2EA56000CE61FD /* ZLBoyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLBoyViewController.h; sourceTree = "<group>"; };
+		443507E11D2EA56000CE61FD /* ZLBoyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLBoyViewController.m; sourceTree = "<group>"; };
+		443507E31D2EA57800CE61FD /* ZLGirlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLGirlViewController.h; sourceTree = "<group>"; };
+		443507E41D2EA57800CE61FD /* ZLGirlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLGirlViewController.m; sourceTree = "<group>"; };
 		469D09B12A411AC933CEE0CD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5FD17E65902CE79DAE9942F0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC4891AF64B5BABC14EAA5A7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -207,6 +216,12 @@
 				443507341D2E278B00CE61FD /* ViewController.m */,
 				443507D91D2E4CAA00CE61FD /* ZLCategoryViewController.h */,
 				443507DA1D2E4CAA00CE61FD /* ZLCategoryViewController.m */,
+				443507DD1D2EA54D00CE61FD /* ZLPeopleViewController.h */,
+				443507DE1D2EA54D00CE61FD /* ZLPeopleViewController.m */,
+				443507E01D2EA56000CE61FD /* ZLBoyViewController.h */,
+				443507E11D2EA56000CE61FD /* ZLBoyViewController.m */,
+				443507E31D2EA57800CE61FD /* ZLGirlViewController.h */,
+				443507E41D2EA57800CE61FD /* ZLGirlViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -364,10 +379,13 @@
 			files = (
 				443507DB1D2E4CAA00CE61FD /* ZLCategoryViewController.m in Sources */,
 				443507D21D2E359900CE61FD /* ZLDropMenuMainCell.m in Sources */,
+				443507E51D2EA57800CE61FD /* ZLGirlViewController.m in Sources */,
 				443507D51D2E35D900CE61FD /* ZLDropMenuSubCell.m in Sources */,
 				443507351D2E278B00CE61FD /* ViewController.m in Sources */,
 				443507C91D2E327900CE61FD /* ZLConst.m in Sources */,
 				443507D81D2E370500CE61FD /* ZLDropDownMenu.m in Sources */,
+				443507E21D2EA56000CE61FD /* ZLBoyViewController.m in Sources */,
+				443507DF1D2EA54D00CE61FD /* ZLPeopleViewController.m in Sources */,
 				443507C41D2E315200CE61FD /* ZLDataTool.m in Sources */,
 				443507321D2E278B00CE61FD /* AppDelegate.m in Sources */,
 				4435072F1D2E278B00CE61FD /* main.m in Sources */,
@@ -485,6 +503,7 @@
 			baseConfigurationReference = BC4891AF64B5BABC14EAA5A7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = DoubleDropMenuDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ouying.zl.DoubleDropMenuDemo;
@@ -497,6 +516,7 @@
 			baseConfigurationReference = 469D09B12A411AC933CEE0CD /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = DoubleDropMenuDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ouying.zl.DoubleDropMenuDemo;

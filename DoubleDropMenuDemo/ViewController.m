@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ZLCategoryViewController.h"
+#import "ZLPeopleViewController.h"
 #import "Masonry.h"
 
 @interface ViewController ()
@@ -24,14 +25,13 @@
         UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.tag = 9;
         button.backgroundColor = [UIColor purpleColor];
-        [button setTitle:@"原始" forState:UIControlStateNormal];
+        [button setTitle:@"DropDowdDemo1" forState:UIControlStateNormal];
         button.titleLabel.textColor = [UIColor blackColor];
         [button addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:button];
         [button mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerY.equalTo(self.view.mas_centerX);
+            make.centerX.equalTo(self.view.mas_centerX);
             make.top.mas_equalTo(100);
-            make.width.mas_equalTo(100);
         }];
         button;
     });
@@ -40,14 +40,13 @@
         UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.tag = 10;
         button.backgroundColor = [UIColor purpleColor];
-        [button setTitle:@"fix 版" forState:UIControlStateNormal];
+        [button setTitle:@"DropDowdDemo2" forState:UIControlStateNormal];
         button.titleLabel.textColor = [UIColor blackColor];
         [button addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:button];
         [button mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(self.view.mas_centerX);
             make.top.equalTo(btnOne.mas_bottom).offset(50);
-            make.width.mas_equalTo(100);
         }];
         button;
     });
@@ -56,7 +55,8 @@
 
 - (void)buttonClicked:(UIButton *)button{
     if (button.tag == 9) {
-        NSLog(@"待续~~~~~~~~~~~");
+        ZLPeopleViewController * peopleVC = [[ZLPeopleViewController alloc] init];
+        [self.navigationController pushViewController:peopleVC animated:YES];
     }else if(button.tag == 10){
         ZLCategoryViewController * categoryViewController  = [[ZLCategoryViewController alloc] init];
         [self.navigationController pushViewController:categoryViewController animated:YES];
