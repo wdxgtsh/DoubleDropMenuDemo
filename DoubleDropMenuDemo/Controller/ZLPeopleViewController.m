@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor yellowColor];
     if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)]) {
         [self setEdgesForExtendedLayout:UIRectEdgeNone];
     }
@@ -28,7 +29,8 @@
     [self addChildViewController:boyVC];
     [self.view addSubview:boyVC.view];
     [boyVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.leading.top.bottom.equalTo(self.view);
+        make.leading.bottom.equalTo(self.view);
+        make.top.offset(200);
     }];
     
     
@@ -36,8 +38,9 @@
     [self addChildViewController:girlVC];
     [self.view addSubview:girlVC.view];
     [girlVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.trailing.top.bottom.equalTo(self.view);
-        make.width.equalTo(boyVC.view.mas_width);
+        make.trailing.bottom.equalTo(self.view);
+        make.top.equalTo(boyVC.view.mas_top);
+        make.width.equalTo(boyVC.view.mas_width).multipliedBy(2);
         make.leading.equalTo(boyVC.view.mas_trailing);
     }];
     
@@ -62,5 +65,9 @@
     [hud hide:YES afterDelay:duration];
 }
 
+
+- (void)dealloc{
+    NSLog(@"%s --- %s", __FILE__, __FUNCTION__);
+}
 
 @end
