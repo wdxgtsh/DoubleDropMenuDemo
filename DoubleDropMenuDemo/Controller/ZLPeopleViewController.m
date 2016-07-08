@@ -44,13 +44,15 @@
         make.leading.equalTo(boyVC.view.mas_trailing);
     }];
     
+    __weak typeof (self) _weakSelf = self;
     boyVC.callbackBlock = ^(NSIndexPath * selectIndex, NSString * categoryName, NSString * subCategoryName){
-        [self showMessage:[NSString stringWithFormat:@"--%@--", categoryName] duration:0.5];
+        [_weakSelf showMessage:[NSString stringWithFormat:@"--%@--", categoryName] duration:0.5];
         [girlVC.commonTableView reloadData];
+        [girlVC.commonTableView setContentOffset:CGPointZero];
     };
     
     girlVC.callbackBlock = ^(NSIndexPath * selectIndex, NSString * categoryName, NSString * subCategoryName){
-        [self showMessage:[NSString stringWithFormat:@"%@---%@", categoryName, subCategoryName] duration:0.5];
+        [_weakSelf showMessage:[NSString stringWithFormat:@"%@---%@", categoryName, subCategoryName] duration:0.5];
     };
 
 }
