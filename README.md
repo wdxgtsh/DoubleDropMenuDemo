@@ -1,4 +1,11 @@
 # DoubleDropMenuDemo
 DoubleDropMenuDemo
 
-![image](https://github.com/wdxgtsh/DoubleDropMenuDemo/blob/master/src/DoubleDropMenuDemo.gif?raw=true)
+![image](https://github.com/wdxgtsh/DoubleDropMenuDemo/blob/master/src/DoubleDropMenuDemo02.gif?raw=true)
+
+####DropDowndDemo1
+	ZLDropDownMenu继承自UIView通过代理方式获取数据源和分发点击事件。
+	
+####DropDowndDemo2
+    ZLBoyViewController和ZLGirlViewController是	ZLPeopleViewController的childViewController，ZLGirlViewController继承自ZLBoyViewController，ZLBoyViewController负责管理数据源及代理方法，如果左右边需要处理的事情多即业务逻辑比较复杂，可以考虑分别在ZLGirlViewController和ZLBoyViewController中实现UITableView的数据源及代理方法。本例中只是一个简单的二级菜单的功能，业务不复杂，所以只在ZLBoyViewController中处理UITableView的数据源及代理方法
+	
